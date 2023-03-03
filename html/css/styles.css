@@ -28,6 +28,10 @@
     font-family: 'Quicksand';
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* PAGE STYLING */
 
 .front-page{
@@ -291,13 +295,22 @@ header{
 /* SECTION TWO */
 
 .two{
-    background-color: var(--color-celadon);
-    /* display: grid; */
+    background-color: var(--color-feldgrau);
+    display: flex;
+    position: absolute;
     height: 100vh;
+    gap: 1rem;
+}
+
+#img-track{
+    display: flex;
+    gap: 1rem;
+    user-select: none;
+    transform: translate(-75px);
 }
 
 .img-slider{
-    display: flex;
     height: 400px;
-    width: 300px;
+    width: 400px;
+    object-fit: cover;
 }
