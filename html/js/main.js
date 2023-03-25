@@ -65,6 +65,12 @@ window.onmousemove = e => {
         transform: `translate(${nextPercentageLimit}%, -0%)`
       }, { duration: 1200, fill: "forwards" });
 
+    for( const image of track.getElementsByClassName('img-slider')) {
+        image.animate({
+            objectPosition: `${50 + nextPercentageLimit}% 50%`
+        }, { duration: 1200, fill: "forwards"});
+    }
+
 }
 
 

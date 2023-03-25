@@ -312,6 +312,7 @@ header{
 
 .img-slider{
     height: 400px;
-    width: 400px;
+    width: 300px;
     object-fit: cover;
+    object-position: 100% 50%;
 }
